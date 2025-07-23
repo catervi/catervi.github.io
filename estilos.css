@@ -991,4 +991,30 @@ body {
     .brand-list {
         grid-template-columns: repeat(2, 1fr);
     }
+}/* Dem
+o button styles */
+.demo-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary-color);
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(74, 144, 226, 0.3);
+}
+
+.demo-btn:hover {
+    background: #357abd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(74, 144, 226, 0.4);
+}
+
+.demo-btn i {
+    font-size: 0.8rem;
 }
