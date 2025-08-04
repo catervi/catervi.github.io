@@ -35,18 +35,20 @@
             <div class="product-detail-grid">
                 <div class="product-imagenes">
                     <div class="main-imagenes">
-                        <img src="imagenes/plaqueta.jpg" alt="Plaqueta BLACK - Vista Principal">
+                        <img src="imagenes/plaqueta.jpg" alt="Plaqueta BLACK - Vista Principal" id="mainImage">
                     </div>
                     <div class="image-thumbnails">
-                        <img src="imagenes/plaqueta.jpg" alt="Vista 1" class="thumbnail active">
-                        <!-- Aquí puedes agregar más imágenes cuando las tengas -->
+                        <img src="imagenes/plaqueta.jpg" alt="Vista 1" class="thumbnail active" onclick="changeMainImage('imagenes/plaqueta.jpg')">
+                        <img src="imagenes/imagen1.jpeg" alt="Vista 2" class="thumbnail" onclick="changeMainImage('imagenes/imagen1.jpeg')">
+                        <img src="imagenes/imagen2.jpeg" alt="Vista 3" class="thumbnail" onclick="changeMainImage('imagenes/imagen2.jpeg')">
+                        <img src="imagenes/imagen3.JPG" alt="Vista 4" class="thumbnail" onclick="changeMainImage('imagenes/imagen3.JPG')">
                     </div>
                 </div>
                 <div class="product-details">
                     <h1 class="product-title">Plaqueta BLACK con DATA LOGGER</h1>
 
                     <div class="price-section">
-                        <span class="current-price">$100.000</span>
+                        <span class="current-price">$125.000</span>
                     </div>
 
                     <div class="key-features">
@@ -236,6 +238,20 @@
             <p>&copy; 2024 Catervi. Todos los derechos reservados.</p>
         </div>
     </footer>
+
+    <script>
+        function changeMainImage(imageSrc) {
+            // Cambiar la imagen principal
+            document.getElementById('mainImage').src = imageSrc;
+            
+            // Remover la clase active de todas las miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+            
+            // Agregar la clase active a la miniatura clickeada
+            event.target.classList.add('active');
+        }
+    </script>
 </body>
 
 </html>
