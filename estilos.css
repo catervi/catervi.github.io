@@ -18,8 +18,8 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.5;
     color: var(--dark-color);
     overflow-x: hidden;
 }
@@ -119,9 +119,9 @@ body {
 }
 
 .hero-title {
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
+    font-size: 2.8rem;
+    font-weight: 900;
+    margin-bottom: 0.8rem;
     line-height: 1.2;
 }
 
@@ -142,9 +142,9 @@ body {
 }
 
 .hero-subtitle {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #666;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     font-weight: 300;
 }
 
@@ -311,15 +311,15 @@ body {
 
 /* Products Section */
 .products {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--white);
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 3rem;
+    font-size: 2rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
     color: var(--dark-color);
 }
 
@@ -470,7 +470,7 @@ body {
 
 /* Features Section */
 .features {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--light-color);
 }
 
@@ -562,7 +562,7 @@ body {
 
 /* Contact Section */
 .contact {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: var(--white);
     text-align: center;
 }
@@ -1176,7 +1176,7 @@ o button styles */
 
 /* Data Logger Access Section */
 .data-logger-access {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
     text-align: center;
 }
@@ -1281,9 +1281,150 @@ o button styles */
     }
 }
 
+/* Product Information Section */
+.product-info-section {
+    padding: 3rem 0;
+    background: var(--light-color);
+}
+
+.product-info-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.info-card {
+    background: var(--white);
+    padding: 2.5rem;
+    border-radius: 20px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-color);
+}
+
+.info-text .intro-text {
+    font-size: 1.1rem;
+    color: var(--dark-color);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.info-text .main-text {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.important-note {
+    background: rgba(74, 144, 226, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(74, 144, 226, 0.2);
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.important-note i {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-top: 0.2rem;
+    flex-shrink: 0;
+}
+
+.important-note p {
+    color: var(--dark-color);
+    line-height: 1.6;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.smart-control-feature {
+    background: rgba(46, 204, 113, 0.1);
+    padding: 1.5rem;
+    border-radius: 15px;
+    border: 1px solid rgba(46, 204, 113, 0.2);
+    margin-bottom: 1.5rem;
+}
+
+.smart-control-feature h3 {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.smart-control-feature p {
+    color: var(--dark-color);
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.smart-control-feature p:last-child {
+    margin-bottom: 0;
+}
+
+/* Purchase Benefits Section */
+.purchase-benefits {
+    padding: 3rem 0;
+    background: var(--white);
+}
+
+.purchase-benefits .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.purchase-benefits .benefit-card {
+    text-align: center;
+    padding: 2rem;
+    background: var(--light-color);
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.purchase-benefits .benefit-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+}
+
+.purchase-benefits .benefit-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--gradient);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.purchase-benefits .benefit-icon .emoji {
+    font-size: 2.5rem;
+}
+
+.purchase-benefits .benefit-card h3 {
+    color: var(--dark-color);
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.purchase-benefits .benefit-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
 /* Technicians Section */
 .technicians {
-    padding: 5rem 0;
+    padding: 3rem 0;
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: var(--white);
     position: relative;
