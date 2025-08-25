@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLACK Basica - Detalles | Catervi</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <a href="index.html" style="display: flex; align-items: center; gap: 0.8rem; text-decoration: none;">
+                    <img src="imagenes/logo-catervi.png" alt="Catervi Logo" class="logo" width="40" height="40">
+                    <h1>Catervi</h1>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Inicio</a>
+                <a href="index.html#productos">Productos</a>
+                <a href="producto-detalle.html#data-logger">Data Logger</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Product Detail Hero -->
+    <section class="product-hero">
+        <div class="container">
+            <div class="product-detail-grid">
+                <div class="product-imagenes">
+                    <div class="main-imagenes">
+                        <img src="imagenes/plaqueta2.jpg" alt="BLACK Basica - Vista Principal" id="mainImage">
+                    </div>
+                    <div class="image-thumbnails">
+                        <img src="imagenes/plaqueta2.jpg" alt="Vista 1" class="thumbnail active"
+                            onclick="changeMainImage('imagenes/plaqueta2.jpg')">
+                        <img src="imagenes/blue1.jpeg" alt="Vista 2" class="thumbnail"
+                            onclick="changeMainImage('imagenes/blue1.jpeg')">
+                        <img src="imagenes/blue2.jpeg" alt="Vista 3" class="thumbnail"
+                            onclick="changeMainImage('imagenes/blue2.jpeg')">
+                        <img src="imagenes/blue3.JPG" alt="Vista 4" class="thumbnail"
+                            onclick="changeMainImage('imagenes/blue3.JPG')">
+                    </div>
+                </div>
+                <div class="product-details">
+                    <h1>BLACK Basica</h1>
+                    <p class="product-subtitle">Versión estándar confiable y eficiente</p>
+
+
+
+                    <div class="key-features">
+                        <div class="feature-highlight">
+                            <i class="fas fa-cog"></i>
+                            <span>Funcionalidades básicas</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-plug"></i>
+                            <span>Instalación simple</span>
+                        </div>
+                        <div class="feature-highlight">
+                            <i class="fas fa-shield-alt"></i>
+                            <span>Confiable y estable</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Features Section -->
+    <section class="product-features-section">
+        <div class="container">
+            <h2 class="section-title">Características de la BLACK Basica</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <h3>Control de Temperatura</h3>
+                    <p>Mantiene las temperaturas ideales: -18°C en freezer y 7°C en refrigerador con precisión estándar.
+                    </p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-snowflake"></i>
+                    </div>
+                    <h3>Deshielo Automático</h3>
+                    <p>Ciclo de deshielo programado cada 6 horas. Software con detección temprana de hielo en
+                        evaporador.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h3>Luces interiores</h3>
+                    <p>Control de luces interiores del freezer y refrigerador integrado en la plaqueta, si tu
+                        configuración lo permite.</p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2 class="section-title">¿Cómo Funciona?</h2>
+            <div class="technical-info">
+
+
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <p>Ciclo de deshielo automático cada 6 horas de funcionamiento del MC con corte por temperatura a
+                        15°C o corte por tiempo en
+                        30 minutos máximo.</p>
+                </div>
+
+                <div class="tech-item">
+                    <div class="tech-icon">
+                        <i class="fas fa-thermometer-half"></i>
+                    </div>
+                    <p>Corte por 10 minutos cuando se apaga el MC para evitar arranques con alto torque.
+                    </p>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Comparison Section -->
+    <section class="comparison-section">
+        <div class="container">
+            <h2 class="section-title">¿Por qué elegir la BLACK Basica?</h2>
+            <div class="comparison-content">
+                <div class="comparison-item">
+                    <div class="comparison-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="comparison-text">
+                        <h3>Simplicidad</h3>
+                        <p>Sin configuraciones complicadas. Instalas y funciona inmediatamente con parámetros
+                            optimizados.</p>
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="comparison-text">
+                        <h3>Confiabilidad</h3>
+                        <p>Diseño probado y estable que garantiza funcionamiento continuo sin complicaciones.</p>
+                    </div>
+                </div>
+
+                <div class="comparison-item">
+                    <div class="comparison-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <div class="comparison-text">
+                        <h3>Precio Accesible</h3>
+                        <p>La mejor relación calidad-precio para reparaciones estándar de heladeras No Frost.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-detail">
+        <div class="container">
+            <h2 class="section-title">¿Listo para mejorar tu heladera?</h2>
+            <p class="contact-subtitle">Contáctanos para realizar tu pedido o resolver cualquier consulta</p>
+            <div class="contact-buttons">
+                <a href="https://wa.me/2215749475?text=Hola! Quiero comprar la BLACK Basica. ¿Cuáles son los pasos a seguir?"
+                    class="contact-btn whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    Comprar por WhatsApp
+                </a>
+                <a href="mailto:hernanmario31@gmail.com?subject=Pedido BLACK Basica" class="contact-btn email">
+                    <i class="fas fa-envelope"></i>
+                    Realizar Pedido por Email
+                </a>
+            </div>
+            <div class="guarantee">
+                <i class="fas fa-shield-alt"></i>
+                <span>Garantía de 3 meses • Soporte técnico incluido</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Catervi. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script>
+        function changeMainImage(imageSrc) {
+            // Cambiar la imagen principal
+            document.getElementById('mainImage').src = imageSrc;
+
+            // Remover la clase active de todas las miniaturas
+            const thumbnails = document.querySelectorAll('.thumbnail');
+            thumbnails.forEach(thumb => thumb.classList.remove('active'));
+
+            // Agregar la clase active a la miniatura clickeada
+            event.target.classList.add('active');
+        }
+    </script>
+</body>
+
+</html>

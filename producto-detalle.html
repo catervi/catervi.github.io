@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plaqueta BLACK - Detalles | Catervi</title>
+    <title>BLACK Web - Detalles | Catervi</title>
     <link rel="stylesheet" href="estilos.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -23,7 +23,7 @@
             <div class="nav-links">
                 <a href="index.html">Inicio</a>
                 <a href="index.html#productos">Productos</a>
-                <a href="index.html#data-logger">Data Logger</a>
+                <a href="#data-logger">Data Logger</a>
                 <a href="index.html#contacto">Contacto</a>
             </div>
         </nav>
@@ -35,7 +35,7 @@
             <div class="product-detail-grid">
                 <div class="product-imagenes">
                     <div class="main-imagenes">
-                        <img src="imagenes/plaqueta.jpg" alt="Plaqueta BLACK - Vista Principal" id="mainImage">
+                        <img src="imagenes/plaqueta.jpg" alt="BLACK Web - Vista Principal" id="mainImage">
                     </div>
                     <div class="image-thumbnails">
                         <img src="imagenes/plaqueta.jpg" alt="Vista 1" class="thumbnail active" onclick="changeMainImage('imagenes/plaqueta.jpg')">
@@ -45,14 +45,15 @@
                     </div>
                 </div>
                 <div class="product-details">
-
+                    <h1>BLACK Web</h1>
+                    <p class="product-subtitle">Incluye todo lo de BLACK Basica + DATA LOGGER y control WEB local</p>
 
 
 
                     <div class="key-features">
                         <div class="feature-highlight">
                             <i class="fas fa-chart-line"></i>
-                            <a href="index.html#data-logger" class="data-logger-link">Data Logger</a>
+                            <a href="#data-logger" class="data-logger-link">Data Logger</a>
                         </div>
                         <div class="feature-highlight">
                             <i class="fas fa-wifi"></i>
@@ -119,6 +120,38 @@
         </div>
     </section>
 
+    <!-- Data Logger Access Section -->
+    <section id="data-logger" class="data-logger-access">
+        <div class="container">
+            <h2 class="section-title">Acceso al DATA LOGGER</h2>
+            <p class="data-logger-subtitle">Monitorea en tiempo real los datos de temperatura y funcionamiento de tu
+                plaqueta</p>
+            <div class="data-logger-content">
+                <div class="data-logger-info">
+                    <div class="feature-highlight">
+                        <i class="fas fa-chart-line"></i>
+                        <span>Gráficos en tiempo real de temperatura</span>
+                    </div>
+                    <div class="feature-highlight">
+                        <i class="fas fa-history"></i>
+                        <span>Historial completo de funcionamiento</span>
+                    </div>
+
+                </div>
+                <div class="data-logger-button">
+                    <a href="https://thingspeak.mathworks.com/channels/2882504" target="_blank" class="data-logger-btn">
+                        <i class="fas fa-external-link-alt"></i>
+                        Acceder al DATA LOGGER
+                    </a>
+                    <p class="data-logger-note">
+                        <i class="fas fa-info-circle"></i>
+                        Visualiza datos reales de plaquetas Catervi en funcionamiento
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- How it Works -->
     <section class="how-it-works">
         <div class="container">
@@ -128,28 +161,22 @@
                     <div class="tech-icon">
                         <i class="fas fa-plug"></i>
                     </div>
-                    <p>La alimentación del forzador del refrigerador se puede configurar con jumper para tensiones de
-                        220V o 12/24V CC.</p>
+                    <p>Se conectan los actuadores y sensores NTC de 2k7 a la placa según manual. Se conecta la energía.</p>
                 </div>
 
                 <div class="tech-item">
                     <div class="tech-icon">
-                        <i class="fas fa-link"></i>
+                        <i class="fas fa-cog"></i>
                     </div>
-                    <p>Si tu configuración de heladera lo permite, es posible conectar las luces interiores de freezer y refrigerador a la placa.</p>
+                    <p>La placa comenzará a funcionar como placa no-frost estándar. Luego se conecta a WiFi para acceder al control web.</p>
                 </div>
-
-
 
                 <div class="tech-item">
                     <div class="tech-icon">
-                        <i class="fas fa-thermometer-half"></i>
+                        <i class="fas fa-cloud-upload-alt"></i>
                     </div>
-                    <p>Las temperaturas por defecto son -18°C en el freezer, 5°C en el refrigerador. Tiempo de deshielo
-                        de 6 horas.</p>
+                    <p>Configurar la página ThingSpeak para subir los datos a la web. Todos los detalles en el manual que se entrega con la compra.</p>
                 </div>
-
-
             </div>
         </div>
     </section>
@@ -163,12 +190,12 @@
             <h2 class="section-title">¿Listo para mejorar tu heladera?</h2>
             <p class="contact-subtitle">Contáctanos para realizar tu pedido o resolver cualquier consulta</p>
             <div class="contact-buttons">
-                <a href="https://wa.me/2215749475?text=Hola! Quiero comprar la Plaqueta BLACK. ¿Cuáles son los pasos a seguir?"
+                <a href="https://wa.me/2215749475?text=Hola! Quiero comprar la BLACK Web. ¿Cuáles son los pasos a seguir?"
                     class="contact-btn whatsapp">
                     <i class="fab fa-whatsapp"></i>
                     Comprar por WhatsApp
                 </a>
-                <a href="mailto:hernanmario31@gmail.com?subject=Pedido Plaqueta BLACK" class="contact-btn email">
+                <a href="mailto:hernanmario31@gmail.com?subject=Pedido BLACK Web" class="contact-btn email">
                     <i class="fas fa-envelope"></i>
                     Realizar Pedido por Email
                 </a>
